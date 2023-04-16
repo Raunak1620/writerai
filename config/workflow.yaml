@@ -1,0 +1,11 @@
+pre-build:
+  commands:  
+  - cmd: "apt-get"
+    args:
+      - "update"
+  - cmd: "apt-get"
+    args:
+      - "install"
+      - "zip"
+      - "-y"
+
