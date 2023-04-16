@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request
-import config
-import writer
+import config.config as config
+import config.writer as writer
 
 def page_not_found(e):
   return render_template('404.html'), 404
